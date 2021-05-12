@@ -10,6 +10,10 @@ const btn_new = document.querySelector('.btn--new');
 const btn_roll = document.querySelector('.btn--roll');
 const btn_hold = document.querySelector('.btn--hold');
 const result = document.querySelector('.result');
+const btn_rule = document.querySelector('.btn--rule');
+const rule_window = document.querySelector('.modal');
+const close_rule = document.querySelector('.close-modal');
+const overlay = document.querySelector('.overlay');
 imgdice.style.opacity = '0%';
 let diceNo = null;
 let current_1 = 0;
@@ -114,6 +118,17 @@ btn_roll.addEventListener('click', roll_dice_func);
 btn_roll.addEventListener('click', add_current_score);
 
 btn_hold.addEventListener('click', hold_press);
+btn_rule.addEventListener('click', function () {
+    rule_window.classList.remove('hidden2');
+    overlay.classList.remove('hidden2');
+})
+close_rule.addEventListener('click', function () {
+    rule_window.classList.add('hidden2');
+    overlay.classList.add('hidden2');
+
+
+})
+
 btn_new.addEventListener('click', function () {
     window.location.reload();
 })

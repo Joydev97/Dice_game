@@ -126,7 +126,7 @@ main {
 .btn::first-letter {
   font-size: 2.4rem;
   display: inline-block;
-  margin-right: 0.7rem;
+  margin-right: 0.2rem;
 }
 
 .btn--new {
@@ -138,7 +138,9 @@ main {
 .btn--hold {
   top: 46.1rem;
 }
-
+.btn--rule{
+  top:52.1rem;
+}
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -185,5 +187,49 @@ main {
   
 }
 .hidden{
+  display: none;
+}
+
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height:80%;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  
+
+  background-color: rgb(126, 93, 93);
+  padding: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.507);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.hidden2{
   display: none;
 }
